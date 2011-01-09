@@ -1,0 +1,70 @@
+-- RMU SESSION 4 EXERCISE 1
+
+If in doubt about how to submit, see SUBMISSION_GUIDELINES file.
+
+In this exercise, we will be building command line applications that allow users
+to interact with web services via the console. These applications must use one
+or more web services to implement their core featureset, but do not necessarily
+need to be simple client applications.
+
+This exercise is pretty open ended, but please follow the guidelines listed
+below, as well as a couple examples of what you might build.
+
+== GUIDELINES
+
+- You may use any web service online tbat is freely available. Prefer 
+  those with a RESTful API, but even manual scraping via mechanize/nokogiri 
+  is acceptable.
+
+- You may use any Ruby libraries/gems you'd like, with one exception: you must
+  interact with your service at the HTTP level rather than using a gem designed
+  for interacting with that service.
+
+- You may use any HTTP client you'd like for interacting with your targeted
+  web service. It's recommended to take a look at the standard library 
+  open-uri, as well as the ruby gems rest-client and httparty.
+
+- You may use any gems or libraries you'd like for implementing your command 
+  line application. That said, consider checking the optparse standard library 
+  before using a gem for the sole purpose of option parsing.
+
+- Use idiomatic Ruby conventions as much as possible. Throughout the session,
+  writing code well is as important as meeting the requirements. But don't be
+  afraid to ask for help, perfection is not expected in a first submission.
+
+- Try to pick a realistic application, one that someone might actually 
+  want to use. Avoid contrived scenarios where possible. Include a 
+  good example of how to use your application.
+
+- Try to make your command line application work well in a *nix environment by
+  properly handling STDIN and STDOUT so that your application can be used in a
+  pipeline.
+
+- Avoid duplicating the work of other students. Announce on the mailing list
+  what you're planning to build, and add a description to the notes section
+  on the assignment's page in university-web.
+
+== EXAMPLES
+
+A command line application which will convert text from one language
+to another by using a translation service.
+
+  $ translate foo.txt --from english --to chinese
+
+A command line application which will convert currency using a web service:
+
+  $ convert_currency "100 USD" --to RMB
+
+Please don't use these examples directly, but feel free to build something
+similar in a different domain.  You can also build more complicated applications
+(possibly even interactive ones) if you are feeling creative.
+
+== QUESTIONS?
+
+Hit up the mailing list or IRC. RMU exercises are left deliberately open ended,
+and often benefit from some discussion before, during, and after you work on
+them.
+
+If you have little experience with web programming, please let me know and I'll
+collect some resources for you to get you up to speed. Not a ton of knowledge
+is needed to work through this exercise.
